@@ -10,7 +10,7 @@ const menu = [
   },
   {
     title: 'contact',
-    link: 'contact',
+    link: '/contact',
   },
 ];
 
