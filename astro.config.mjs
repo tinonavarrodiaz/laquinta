@@ -7,4 +7,6 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   sourcemap: true,
   integrations: [react(), sitemap()],
+  site: 'https://tinonavarrodiaz.github.io',
+  base: '/laquinta',
 });
