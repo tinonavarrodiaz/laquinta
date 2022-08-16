@@ -2,15 +2,15 @@ const p = 'https://tinonavarrodiaz.github.io/laquinta/';
 const menu = [
   {
     title: 'home',
-    link: `${p}`,
+    link: '/',
   },
   {
     title: 'services',
-    link: `${p}services`,
+    link: '/services',
   },
   {
     title: 'contact',
-    link: `${p}contact`,
+    link: 'contact',
   },
 ];
 
