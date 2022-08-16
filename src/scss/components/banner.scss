@@ -75,19 +75,27 @@
   color: #fff;
   font-size: 1.1em;
   padding: .5em 1em;
+  span{
+    display: none;
+  }
   a{
     font-size: 1.3em;
   }
-    @media screen and (min-width: 724px) and (orientation: landscape) {
-      font-size: 1.3em;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 1em 10%;
-      .booking{
-        transform: translateY(-8%);
-      }
-      a {
-        font-size: 1.4em;
-      }
+  @media screen and (min-width: 724px) and (orientation: landscape) {
+    font-size: 1.3em;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 10%;
+    span{
+      display: inline-block;
+      margin-right: .2em;
     }
+    .booking{
+      transform: translateY(-8%);
+    }
+    a {
+      font-size: 1.4em;
+      pointer-events: none;
+    }
+  }
 }
