@@ -1,15 +1,15 @@
 const menu = [
   {
     title: 'home',
-    link: './',
+    link: '/',
   },
   {
     title: 'services',
-    link: './services',
+    link: '/services',
   },
   {
     title: 'contact',
-    link: './contact',
+    link: '/contact',
   },
 ];
 
