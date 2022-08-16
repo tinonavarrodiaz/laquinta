@@ -1,0 +1,22 @@
+---
+// import { Image } from '@astrojs/image';
+import logo from '../img/logo.svg';
+import Menu from './Menu.jsx';
+import TopBar from "./TopBar.astro";
+
+
+export interface Props {
+  page: string;
+}
+
+const { page } = Astro.props as Props;
+
+---
+
+<TopBar />
+<header class="main-header">
+  <a class="main-logo" href="/">
+    <img src={logo} alt="logo" />
+  </a>
+  <Menu client:load page={page} />
+</header>

@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="La Quinta - Plumbing Solutions" page="home">
+
+  <section class="home-banner">
+    <div class="banner-content">
+      <!-- <img src="/img/van1.jpg" alt=""> -->
+      <picture class="van">
+        <source srcset="/img/van1.webp" type="image/webp" media="(orientation=landscape)">
+        <source srcset="/img/van1.jpg" type="image/jpg" media="(orientation=landscape)">
+        <source srcset="/img/van1-m.webp" type="image/webp" media="(orientation=portrait)">
+        <source srcset="/img/van1-m.jpg" type="image/jpg" media="(orientation=portrait)">
+        <img src="/img/van1.jpg" alt="Van">
+      </picture>
+      <div class="data-home">
+        <img src="/img/logo-home.svg" alt="logo" class="logo-home" />
+        <img src="/img/text.svg" alt="text" class="title-home" />
+        <img src="/img/lic.svg" alt="lic" class="lic" />
+        <img src="/img/stamp.svg" alt="text" class="sello" />
+      </div>
+    </div>
+    <footer class="home-banner__footer">
+      <p>Serving the Coachella Valley</p>
+      <p class="booking">Booking on call: <a href="tel:7604092549">760.409.2549</a></p>
+    </footer>
+  </section>
+
+</Layout>

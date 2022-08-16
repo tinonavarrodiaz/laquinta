@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TopPage from "../components/TopPage.astro";
+import logo from "../img/logo.svg";
+---
+
+<Layout title="Contact" page="contact">
+  <TopPage />
+  <h1 class="section__title">Contact</h1>
+  <section class="section section__contact">
+    <form action="/php/send/mail.php" method="post" class="contact__form">
+      <h2>REQUEST SERVICE</h2>
+      <div class="input-group">
+        <input type="text" id="name" name="name" placeholder=" ">
+        <label for="name">Name</label>
+      </div>
+      <div class="input-group">
+        <input type="email" id="email" name="email" placeholder=" ">
+        <label for="email">Email</label>
+      </div>
+      <div class="input-group">
+        <input type="text" id="phone" name="phone" placeholder=" ">
+        <label for="phone">Phone</label>
+      </div>
+      <div class="input-group">
+        <input type="text" id="address" name="address" placeholder=" ">
+        <label for="address">Address</label>
+      </div>
+      <div class="input-group text-group">
+        <textarea id="msg" placeholder=" "></textarea>
+        <label for="msg">Description of Problem</label>
+      </div>
+      <footer class="contact__form-footer">
+        <div id="notes"></div>
+        <button class="btn-send" type="submit">Send</button>
+      </footer>
+    </form>
+    <div class="data">
+      <img src={logo} alt="Logotipo">
+      <p>QUALITY SERVICE LICENSED - BONDED - INSURED</p>
+      <p>100% SATISFACTION GUARANTEED</p>
+      <p class="phone"><a href="tel:7604092549">TEL: 760.409.2549</a></p>
+      <p>44775 Via Rosa Trail, La Quinta CA. 92253</p>
+      <p><a href="mailto:info@laquintaplumbingsolutions.com">info@laquintaplumbingsolutions.com</a></p>
+      <p>SERVING THE COACHELLA VALLEY</p>
+    </div>
+  </section>
+</Layout>
