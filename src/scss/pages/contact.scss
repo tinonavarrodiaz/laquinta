@@ -79,7 +79,8 @@ input, textarea{
 }
 .btn-send{
   line-height: 2.5em;
-  padding: 0 2.5em;
+  height: 2.5em;
+  padding: 0 2.6em;
   border: none;
   text-transform: uppercase;
   border: 1px solid ;
@@ -87,9 +88,13 @@ input, textarea{
   background-color: #fff;
   color: var(--color-main-hover);
   transition: all .3s;
-  &:hover{
+  &:hover, &.active{
     background-color: var(--color-main-hover);
     color: #fff;
+  }
+  & img{
+    width: 2em;
+    height: auto;
   }
 }
 .text-group{
@@ -142,5 +147,13 @@ input, textarea{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
+  }
+}
+#notes{
+  &.success{
+    color: darkgreen;
+  }
+  &.error{
+    color:darkred;
   }
 }
